@@ -21,6 +21,9 @@
                                             <label alignment="left" text="8 rowerów" id="uRY-Ew-pVg"/>
                                             <label alignment="left" text="4 wolne stojaki" id="hg5-Io-BUy"/>
                                         </items>
+                                        <connections>
+                                            <segue destination="gEv-Cb-nXv" kind="push" id="M9g-FJ-RGm"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="bieksCountLabel" destination="uRY-Ew-pVg" id="4RS-ks-aCS"/>
@@ -37,6 +40,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Map Interface Controller-->
+        <scene sceneID="uwt-uZ-WQf">
+            <objects>
+                <controller id="gEv-Cb-nXv" customClass="MapInterfaceController" customModule="iWatchCityBikes_WatchKit_Extension">
+                    <items>
+                        <map alignment="left" id="DSF-wy-Xp3"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="DSF-wy-Xp3" id="3TK-xx-tHC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="426" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

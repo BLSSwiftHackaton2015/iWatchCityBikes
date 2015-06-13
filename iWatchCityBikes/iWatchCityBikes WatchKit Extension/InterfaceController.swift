@@ -35,33 +35,16 @@ class InterfaceController: WKInterfaceController {
     
     func loadItems() {
         
-        var station1 = Station()
-        station1.name = "Plac Kościuszki"
-        station1.availableBikesCount = 5
-        station1.availableLocksCount = 3
-        
-        var station2 = Station()
-        station2.name = "Plac Rodłą"
-        station2.availableBikesCount = 15
-        station2.availableLocksCount = 3
-        
-        var station3 = Station()
-        station3.name = "Jasne Błonia"
-        station3.availableBikesCount = 6
-        station3.availableLocksCount = 8
-
-        let stations:[Station] = [station1, station2, station3]
-        
-        
-        // update table view 
-        self.tableView.setNumberOfRows(stations.count, withRowType: "standard");
-
-        for (index, station:Station) in enumerate(stations) {
-            var cell:WatchTableCell = self.tableView.rowControllerAtIndex(index) as! WatchTableCell
-            cell.stationNameLabel.setText(station.name)
-            cell.bieksCountLabel.setText("W. rowerów: " + String(station.availableBikesCount))
-            cell.freeStandCountLabel.setText("W. zamków: " + String(station.availableLocksCount))
+        NetworkManager.getData { stations in
+            // update table view
+            self.tableView.setNumberOfRows(stations.count, withRowType: "standard");
+            
+            for (index, station:Station) in enumerate(stations as! [Station]) {
+                var cell:WatchTableCell = self.tableView.rowControllerAtIndex(index) as! WatchTableCell
+                cell.stationNameLabel.setText(station.name)
+                cell.bieksCountLabel.setText("W. rowerów: " + String(station.availableBikesCount))
+                cell.freeStandCountLabel.setText("W. zamków: " + String(station.availableLocksCount))
+            }
         }
-        
     }
 }

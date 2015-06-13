@@ -17,6 +17,7 @@
 		375A20FF1B2C4A27001402E4 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3F1B2C45DC005923DC /* Station.swift */; };
 		375A21011B2C5A48001402E4 /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A21001B2C5A48001402E4 /* MapInterfaceController.swift */; };
 		375A21031B2C5E4F001402E4 /* WatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A21021B2C5E4F001402E4 /* WatchTableCell.swift */; };
+		375A21061B2C6537001402E4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE965FE01B2C2DAE000C8EFD /* NetworkManager.swift */; };
 		3769C11E1B2C235E0098649E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11D1B2C235E0098649E /* AppDelegate.swift */; };
 		3769C1201B2C235E0098649E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11F1B2C235E0098649E /* ViewController.swift */; };
 		3769C1231B2C235E0098649E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769C1211B2C235E0098649E /* Main.storyboard */; };
@@ -375,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375A21061B2C6537001402E4 /* NetworkManager.swift in Sources */,
 				375A21031B2C5E4F001402E4 /* WatchTableCell.swift in Sources */,
 				3713CE451B2C4841005923DC /* NotificationController.swift in Sources */,
 				375A21011B2C5A48001402E4 /* MapInterfaceController.swift in Sources */,

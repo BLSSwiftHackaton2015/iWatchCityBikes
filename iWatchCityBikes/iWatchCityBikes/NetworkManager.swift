@@ -35,7 +35,7 @@ class NetworkManager: NSObject {
         //let pos = str.rangeOfString()
         let jsonStr1:NSString = inputPage.componentsSeparatedByString("var mapDataLocations = ")[1] as! NSString
         let jsonStr2:NSString = jsonStr1.componentsSeparatedByString(";")[0] as! NSString
-        println(jsonStr2)
+        //println(jsonStr2)
         
         var jsonError:NSError?
         let jsonData = jsonStr2.dataUsingEncoding(NSUTF8StringEncoding);

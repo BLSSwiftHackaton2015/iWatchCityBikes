@@ -10,19 +10,26 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     @IBOutlet weak var tableView: WKInterfaceTable!
     
     var stations:[Station]! = []
-    
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
-        // Configure interface objects here.
-    }
+    var lastLocation:CLLocation?
+    let locationManager =  CLLocationManager()
     
     override func willActivate() {
+        
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        self.locationManager.activityType = CLActivityType.OtherNavigation
+        self.locationManager.distanceFilter = 5
+        
+        var status:CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
+            self.locationManager.startUpdatingLocation()
+        }
+        
         
         self.loadItems()
         
@@ -54,5 +61,10 @@ class InterfaceController: WKInterfaceController {
     
     override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
         return self.stations[rowIndex]
+    }
+    
+    // MARK: CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        self.lastLocation = locations.last as! CLLocation
     }
 }

@@ -30,27 +30,23 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
             self.locationManager.startUpdatingLocation()
         }
         
-        
-        self.loadItems()
-        
         super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
     
     func loadItems() {
         
         NetworkManager.getData { stations in
             
-            self.stations = stations as! [Station]
+            self.stations = GPSPositionSorter.sortStations(stations as! [Station], userPos: self.lastLocation!.coordinate)
+            if stations.count > 4 {
+                self.stations.removeRange(Range(start:5, end:stations.count))
+            }
+            
             
             // update table view
-            self.tableView.setNumberOfRows(stations.count, withRowType: "standard");
+            self.tableView.setNumberOfRows(self.stations.count, withRowType: "standard");
             
-            for (index, station:Station) in enumerate(stations as! [Station]) {
+            for (index, station:Station) in enumerate(self.stations) {
                 var cell:WatchTableCell = self.tableView.rowControllerAtIndex(index) as! WatchTableCell
                 cell.stationNameLabel.setText(station.name)
                 cell.bieksCountLabel.setText("W. rowerów: " + String(station.availableBikesCount))
@@ -65,6 +61,7 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     // MARK: CLLocationManagerDelegate
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        self.lastLocation = locations.last as! CLLocation
+        self.lastLocation = locations.last as? CLLocation
+        loadItems()
     }
 }

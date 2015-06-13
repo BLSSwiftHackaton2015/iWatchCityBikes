@@ -21,6 +21,13 @@ class GPSPositionSorter: NSObject {
             return self.distance(userPos, s1) > self.distance(userPos, s2)
         }
         return pomTab
-
+    }
+    
+    class func sortStations(stations:[Station], userPos:CLLocationCoordinate2D) -> [Station] {
+        var pomTab = stations
+        pomTab.sort { s1, s2 in
+            return self.distance(userPos, s1.location) > self.distance(userPos, s2.location)
+        }
+        return pomTab
     }
 }

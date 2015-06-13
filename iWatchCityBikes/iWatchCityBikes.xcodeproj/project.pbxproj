@@ -13,6 +13,7 @@
 		3769C1251B2C235E0098649E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3769C1241B2C235E0098649E /* Images.xcassets */; };
 		3769C1281B2C235E0098649E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3769C1261B2C235E0098649E /* LaunchScreen.xib */; };
 		3769C1341B2C235E0098649E /* iWatchCityBikesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C1331B2C235E0098649E /* iWatchCityBikesTests.swift */; };
+		CE965FDF1B2C26C1000C8EFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE965FDE1B2C26C1000C8EFD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3769C12D1B2C235E0098649E /* iWatchCityBikesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWatchCityBikesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3769C1321B2C235E0098649E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3769C1331B2C235E0098649E /* iWatchCityBikesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWatchCityBikesTests.swift; sourceTree = "<group>"; };
+		CE965FDE1B2C26C1000C8EFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE965FDF1B2C26C1000C8EFD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		3769C10F1B2C235E0098649E = {
 			isa = PBXGroup;
 			children = (
+				CE965FDE1B2C26C1000C8EFD /* MapKit.framework */,
 				3769C11A1B2C235E0098649E /* iWatchCityBikes */,
 				3769C1301B2C235E0098649E /* iWatchCityBikesTests */,
 				3769C1191B2C235E0098649E /* Products */,
@@ -161,6 +165,11 @@
 				TargetAttributes = {
 					3769C1171B2C235E0098649E = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3769C12C1B2C235E0098649E = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -409,6 +418,7 @@
 				3769C1391B2C235E0098649E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3769C13A1B2C235E0098649E /* Build configuration list for PBXNativeTarget "iWatchCityBikesTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +427,7 @@
 				3769C13C1B2C235E0098649E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

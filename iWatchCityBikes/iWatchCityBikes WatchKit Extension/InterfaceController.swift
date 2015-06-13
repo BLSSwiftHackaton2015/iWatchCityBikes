@@ -18,7 +18,8 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     var lastLocation:CLLocation?
     let locationManager =  CLLocationManager()
     
-    override func willActivate() {
+    override init() {
+        super.init()
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
@@ -29,10 +30,8 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         if status == .AuthorizedAlways || status == .AuthorizedWhenInUse {
             self.locationManager.startUpdatingLocation()
         }
-        
-        super.willActivate()
     }
-    
+        
     func loadItems() {
         
         NetworkManager.getData { tempStations in

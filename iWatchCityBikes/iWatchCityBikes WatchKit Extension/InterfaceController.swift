@@ -20,14 +20,14 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
     }
-
+    
     override func willActivate() {
-
+        
         self.loadItems()
         
         super.willActivate()
     }
-
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
@@ -36,5 +36,5 @@ class InterfaceController: WKInterfaceController {
     func loadItems() {
         self.tableView.setNumberOfRows(3, withRowType: "standard");
     }
-
+    
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3713CE1F1B2C4472005923DC /* iWatchCityBikes WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 3713CE1E1B2C4472005923DC /* iWatchCityBikes WatchKit App.app */; };
+		3713CE2C1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3713CE0F1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3713CE401B2C45DC005923DC /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3F1B2C45DC005923DC /* Station.swift */; };
+		3713CE431B2C473A005923DC /* WatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE421B2C473A005923DC /* WatchTableCell.swift */; };
+		3713CE441B2C483C005923DC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3C1B2C44B1005923DC /* InterfaceController.swift */; };
+		3713CE451B2C4841005923DC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3D1B2C44B1005923DC /* NotificationController.swift */; };
+		3713CE461B2C484F005923DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713CE341B2C44B1005923DC /* Interface.storyboard */; };
+		3713CE481B2C4852005923DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713CE341B2C44B1005923DC /* Interface.storyboard */; };
 		3769C11E1B2C235E0098649E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11D1B2C235E0098649E /* AppDelegate.swift */; };
 		3769C1201B2C235E0098649E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11F1B2C235E0098649E /* ViewController.swift */; };
 		3769C1231B2C235E0098649E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769C1211B2C235E0098649E /* Main.storyboard */; };
@@ -18,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3713CE201B2C4472005923DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3769C1101B2C235E0098649E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3713CE1D1B2C4472005923DC;
+			remoteInfo = "iWatchCityBikes WatchKit App";
+		};
+		3713CE2A1B2C4472005923DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3769C1101B2C235E0098649E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3713CE0E1B2C4472005923DC;
+			remoteInfo = "iWatchCityBikes WatchKit Extension";
+		};
 		3769C12E1B2C235E0098649E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3769C1101B2C235E0098649E /* Project object */;
@@ -27,7 +49,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3713CE081B2C41A9005923DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3713CE2C1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3713CE0F1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iWatchCityBikes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3713CE1E1B2C4472005923DC /* iWatchCityBikes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iWatchCityBikes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3713CE351B2C44B1005923DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3713CE361B2C44B1005923DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3713CE371B2C44B1005923DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3713CE391B2C44B1005923DC /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		3713CE3A1B2C44B1005923DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3713CE3B1B2C44B1005923DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3713CE3C1B2C44B1005923DC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3713CE3D1B2C44B1005923DC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3713CE3E1B2C44B1005923DC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3713CE3F1B2C45DC005923DC /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3713CE411B2C4739005923DC /* iWatchCityBikes WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWatchCityBikes WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		3713CE421B2C473A005923DC /* WatchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchTableCell.swift; path = "../../../../iWatchCityBikes WatchKit Extension/WatchTableCell.swift"; sourceTree = "<group>"; };
 		3769C1181B2C235E0098649E /* iWatchCityBikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchCityBikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3769C11C1B2C235E0098649E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3769C11D1B2C235E0098649E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3713CE0C1B2C4472005923DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3769C1151B2C235E0098649E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3713CE331B2C44B1005923DC /* iWatchCityBikes WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3713CE341B2C44B1005923DC /* Interface.storyboard */,
+				3713CE361B2C44B1005923DC /* Images.xcassets */,
+				3713CE371B2C44B1005923DC /* Info.plist */,
+			);
+			path = "iWatchCityBikes WatchKit App";
+			sourceTree = "<group>";
+		};
+		3713CE381B2C44B1005923DC /* iWatchCityBikes WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3713CE421B2C473A005923DC /* WatchTableCell.swift */,
+				3713CE391B2C44B1005923DC /* GlanceController.swift */,
+				3713CE3A1B2C44B1005923DC /* Images.xcassets */,
+				3713CE3B1B2C44B1005923DC /* Info.plist */,
+				3713CE3C1B2C44B1005923DC /* InterfaceController.swift */,
+				3713CE3D1B2C44B1005923DC /* NotificationController.swift */,
+				3713CE3E1B2C44B1005923DC /* PushNotificationPayload.apns */,
+				3713CE411B2C4739005923DC /* iWatchCityBikes WatchKit Extension-Bridging-Header.h */,
+			);
+			path = "iWatchCityBikes WatchKit Extension";
+			sourceTree = "<group>";
+		};
 		3769C10F1B2C235E0098649E = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +150,8 @@
 				3769C11A1B2C235E0098649E /* iWatchCityBikes */,
 				3769C1301B2C235E0098649E /* iWatchCityBikesTests */,
 				3769C1191B2C235E0098649E /* Products */,
+				3713CE331B2C44B1005923DC /* iWatchCityBikes WatchKit App */,
+				3713CE381B2C44B1005923DC /* iWatchCityBikes WatchKit Extension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +160,8 @@
 			children = (
 				3769C1181B2C235E0098649E /* iWatchCityBikes.app */,
 				3769C12D1B2C235E0098649E /* iWatchCityBikesTests.xctest */,
+				3713CE0F1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex */,
+				3713CE1E1B2C4472005923DC /* iWatchCityBikes WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +176,7 @@
 				3769C1261B2C235E0098649E /* LaunchScreen.xib */,
 				3769C11B1B2C235E0098649E /* Supporting Files */,
 				CE965FE01B2C2DAE000C8EFD /* NetworkManager.swift */,
+				3713CE3F1B2C45DC005923DC /* Station.swift */,
 			);
 			path = iWatchCityBikes;
 			sourceTree = "<group>";
@@ -122,6 +209,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3713CE0E1B2C4472005923DC /* iWatchCityBikes WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3713CE301B2C4472005923DC /* Build configuration list for PBXNativeTarget "iWatchCityBikes WatchKit Extension" */;
+			buildPhases = (
+				3713CE0B1B2C4472005923DC /* Sources */,
+				3713CE0C1B2C4472005923DC /* Frameworks */,
+				3713CE0D1B2C4472005923DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3713CE211B2C4472005923DC /* PBXTargetDependency */,
+			);
+			name = "iWatchCityBikes WatchKit Extension";
+			productName = "iWatchCityBikes WatchKit Extension";
+			productReference = 3713CE0F1B2C4472005923DC /* iWatchCityBikes WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		3713CE1D1B2C4472005923DC /* iWatchCityBikes WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3713CE2D1B2C4472005923DC /* Build configuration list for PBXNativeTarget "iWatchCityBikes WatchKit App" */;
+			buildPhases = (
+				3713CE1C1B2C4472005923DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iWatchCityBikes WatchKit App";
+			productName = "iWatchCityBikes WatchKit App";
+			productReference = 3713CE1E1B2C4472005923DC /* iWatchCityBikes WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		3769C1171B2C235E0098649E /* iWatchCityBikes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3769C1371B2C235E0098649E /* Build configuration list for PBXNativeTarget "iWatchCityBikes" */;
@@ -129,10 +249,12 @@
 				3769C1141B2C235E0098649E /* Sources */,
 				3769C1151B2C235E0098649E /* Frameworks */,
 				3769C1161B2C235E0098649E /* Resources */,
+				3713CE081B2C41A9005923DC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3713CE2B1B2C4472005923DC /* PBXTargetDependency */,
 			);
 			name = iWatchCityBikes;
 			productName = iWatchCityBikes;
@@ -166,6 +288,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = SwiftHackaton;
 				TargetAttributes = {
+					3713CE0E1B2C4472005923DC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3713CE1D1B2C4472005923DC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					3769C1171B2C235E0098649E = {
 						CreatedOnToolsVersion = 6.3.1;
 						SystemCapabilities = {
@@ -195,11 +323,30 @@
 			targets = (
 				3769C1171B2C235E0098649E /* iWatchCityBikes */,
 				3769C12C1B2C235E0098649E /* iWatchCityBikesTests */,
+				3713CE0E1B2C4472005923DC /* iWatchCityBikes WatchKit Extension */,
+				3713CE1D1B2C4472005923DC /* iWatchCityBikes WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3713CE0D1B2C4472005923DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3713CE461B2C484F005923DC /* Interface.storyboard in Resources */,
+				3713CE1F1B2C4472005923DC /* iWatchCityBikes WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3713CE1C1B2C4472005923DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3713CE481B2C4852005923DC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3769C1161B2C235E0098649E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,12 +367,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3713CE0B1B2C4472005923DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3713CE451B2C4841005923DC /* NotificationController.swift in Sources */,
+				3713CE431B2C473A005923DC /* WatchTableCell.swift in Sources */,
+				3713CE441B2C483C005923DC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3769C1141B2C235E0098649E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE965FE11B2C2DAE000C8EFD /* NetworkManager.swift in Sources */,
 				3769C1201B2C235E0098649E /* ViewController.swift in Sources */,
+				3713CE401B2C45DC005923DC /* Station.swift in Sources */,
 				3769C11E1B2C235E0098649E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +399,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3713CE211B2C4472005923DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3713CE1D1B2C4472005923DC /* iWatchCityBikes WatchKit App */;
+			targetProxy = 3713CE201B2C4472005923DC /* PBXContainerItemProxy */;
+		};
+		3713CE2B1B2C4472005923DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3713CE0E1B2C4472005923DC /* iWatchCityBikes WatchKit Extension */;
+			targetProxy = 3713CE2A1B2C4472005923DC /* PBXContainerItemProxy */;
+		};
 		3769C12F1B2C235E0098649E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3769C1171B2C235E0098649E /* iWatchCityBikes */;
@@ -249,6 +417,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3713CE341B2C44B1005923DC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3713CE351B2C44B1005923DC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		3769C1211B2C235E0098649E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +444,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3713CE2E1B2C4472005923DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = iWatchCityBikes_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchCityBikes WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		3713CE2F1B2C4472005923DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = iWatchCityBikes_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchCityBikes WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		3713CE311B2C4472005923DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iWatchCityBikes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iWatchCityBikes WatchKit Extension/iWatchCityBikes WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3713CE321B2C4472005923DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "iWatchCityBikes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iWatchCityBikes WatchKit Extension/iWatchCityBikes WatchKit Extension-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		3769C1351B2C235E0098649E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +643,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3713CE2D1B2C4472005923DC /* Build configuration list for PBXNativeTarget "iWatchCityBikes WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3713CE2E1B2C4472005923DC /* Debug */,
+				3713CE2F1B2C4472005923DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3713CE301B2C4472005923DC /* Build configuration list for PBXNativeTarget "iWatchCityBikes WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3713CE311B2C4472005923DC /* Debug */,
+				3713CE321B2C4472005923DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3769C1131B2C235E0098649E /* Build configuration list for PBXProject "iWatchCityBikes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

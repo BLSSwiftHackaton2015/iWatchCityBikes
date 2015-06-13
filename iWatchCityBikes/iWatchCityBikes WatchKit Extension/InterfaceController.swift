@@ -35,11 +35,11 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     func loadItems() {
         
-        NetworkManager.getData { stations in
+        NetworkManager.getData { tempStations in
             
-            self.stations = GPSPositionSorter.sortStations(stations as! [Station], userPos: self.lastLocation!.coordinate)
-            if stations.count > 4 {
-                self.stations.removeRange(Range(start:5, end:stations.count))
+            self.stations = GPSPositionSorter.sortStations(tempStations as! [Station], userPos: self.lastLocation!.coordinate)
+            if self.stations.count > 3 {
+                self.stations.removeRange(Range(start:3, end:self.stations.count-1))
             }
             
             

@@ -15,11 +15,11 @@
                                 <tableRow identifier="standard" id="FWn-qn-aMh" customClass="WatchTableCell" customModule="iWatchCityBikes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="72.5" alignment="left" layout="vertical" id="z0J-Pb-IZO">
                                         <items>
-                                            <label width="127" alignment="left" text="Plac kościuszki" id="oV3-WM-gvV">
+                                            <label width="127" alignment="left" text="-" id="oV3-WM-gvV">
                                                 <color key="textColor" red="0.0" green="0.62745098040000002" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <label alignment="left" text="8 rowerów" id="uRY-Ew-pVg"/>
-                                            <label alignment="left" text="4 wolne stojaki" id="hg5-Io-BUy"/>
+                                            <label alignment="left" text="-" id="uRY-Ew-pVg"/>
+                                            <label alignment="left" text="-" id="hg5-Io-BUy"/>
                                         </items>
                                         <connections>
                                             <segue destination="gEv-Cb-nXv" kind="push" id="M9g-FJ-RGm"/>

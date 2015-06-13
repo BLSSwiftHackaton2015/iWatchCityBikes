@@ -34,5 +34,7 @@ class NetworkManager: NSObject {
         if let unwrappedError = jsonError {
             println(unwrappedError)
         }
+        
+        
     }
 }

@@ -10,17 +10,21 @@ import UIKit
 import Foundation
 
 class NetworkManager: NSObject {
-    class func getData() {
+    class func getData(completion: NSArray -> Void) {
         let baseURL =  NSURL(string: "https://www.bikes-srm.pl/LocationsMap.aspx")
         let task = NSURLSession.sharedSession().dataTaskWithURL(baseURL!) {(data, response, error) in
             //println(NSString(data: data, encoding: NSUTF8StringEncoding))
             let tab = self.parse(NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            var stationArray = NSMutableArray()
             
             for station : AnyObject in tab {
                 let st : NSDictionary = station as! NSDictionary
                 let st1 = Station(dictionary: st)
-                
+                stationArray.addObject(st1)
+                //println(st1)
             }
+            
+            completion(stationArray)
         }
         
         task.resume()

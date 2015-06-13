@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
             
             self.stations = GPSPositionSorter.sortStations(tempStations as! [Station], userPos: self.lastLocation!.coordinate)
             if self.stations.count > 3 {
-                self.stations.removeRange(Range(start:3, end:self.stations.count-1))
+                self.stations.removeRange(Range(start:3, end:self.stations.count))
             }
             
             

@@ -14,13 +14,19 @@ class NetworkManager: NSObject {
         let baseURL =  NSURL(string: "https://www.bikes-srm.pl/LocationsMap.aspx")
         let task = NSURLSession.sharedSession().dataTaskWithURL(baseURL!) {(data, response, error) in
             //println(NSString(data: data, encoding: NSUTF8StringEncoding))
-            self.parse(NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            let tab = self.parse(NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            
+            for station : AnyObject in tab {
+                let st : NSDictionary = station as! NSDictionary
+                let st1 = Station(dictionary: st)
+                
+            }
         }
         
         task.resume()
     }
     
-    private class func parse(inputPage: NSString){
+    private class func parse(inputPage: NSString) -> NSArray {
         //var str = inputPage
         //let pos = str.rangeOfString()
         let jsonStr1:NSString = inputPage.componentsSeparatedByString("var mapDataLocations = ")[1] as! NSString
@@ -35,6 +41,7 @@ class NetworkManager: NSObject {
             println(unwrappedError)
         }
         
+        return json
         
     }
 }

@@ -26,6 +26,8 @@
 		3769C1341B2C235E0098649E /* iWatchCityBikesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C1331B2C235E0098649E /* iWatchCityBikesTests.swift */; };
 		CE965FDF1B2C26C1000C8EFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE965FDE1B2C26C1000C8EFD /* MapKit.framework */; };
 		CE965FE11B2C2DAE000C8EFD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE965FE01B2C2DAE000C8EFD /* NetworkManager.swift */; };
+		CE965FE31B2C6E2B000C8EFD /* GPSPositionSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE965FE21B2C6E2B000C8EFD /* GPSPositionSorter.swift */; };
+		CE965FE41B2C6E2F000C8EFD /* GPSPositionSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE965FE21B2C6E2B000C8EFD /* GPSPositionSorter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,7 @@
 		3769C1331B2C235E0098649E /* iWatchCityBikesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWatchCityBikesTests.swift; sourceTree = "<group>"; };
 		CE965FDE1B2C26C1000C8EFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE965FE01B2C2DAE000C8EFD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE965FE21B2C6E2B000C8EFD /* GPSPositionSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSPositionSorter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,7 @@
 				3713CE3E1B2C44B1005923DC /* PushNotificationPayload.apns */,
 				3713CE411B2C4739005923DC /* iWatchCityBikes WatchKit Extension-Bridging-Header.h */,
 				375A21001B2C5A48001402E4 /* MapInterfaceController.swift */,
+				CE965FE21B2C6E2B000C8EFD /* GPSPositionSorter.swift */,
 			);
 			path = "iWatchCityBikes WatchKit Extension";
 			sourceTree = "<group>";
@@ -376,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE965FE31B2C6E2B000C8EFD /* GPSPositionSorter.swift in Sources */,
 				375A21061B2C6537001402E4 /* NetworkManager.swift in Sources */,
 				375A21031B2C5E4F001402E4 /* WatchTableCell.swift in Sources */,
 				3713CE451B2C4841005923DC /* NotificationController.swift in Sources */,
@@ -391,6 +396,7 @@
 			files = (
 				CE965FE11B2C2DAE000C8EFD /* NetworkManager.swift in Sources */,
 				3769C1201B2C235E0098649E /* ViewController.swift in Sources */,
+				CE965FE41B2C6E2F000C8EFD /* GPSPositionSorter.swift in Sources */,
 				3713CE401B2C45DC005923DC /* Station.swift in Sources */,
 				3769C11E1B2C235E0098649E /* AppDelegate.swift in Sources */,
 			);

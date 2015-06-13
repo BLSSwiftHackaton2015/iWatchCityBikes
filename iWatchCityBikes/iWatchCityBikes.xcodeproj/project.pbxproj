@@ -15,6 +15,7 @@
 		3713CE451B2C4841005923DC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3D1B2C44B1005923DC /* NotificationController.swift */; };
 		3713CE461B2C484F005923DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713CE341B2C44B1005923DC /* Interface.storyboard */; };
 		3713CE481B2C4852005923DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713CE341B2C44B1005923DC /* Interface.storyboard */; };
+		375A20FF1B2C4A27001402E4 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713CE3F1B2C45DC005923DC /* Station.swift */; };
 		3769C11E1B2C235E0098649E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11D1B2C235E0098649E /* AppDelegate.swift */; };
 		3769C1201B2C235E0098649E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C11F1B2C235E0098649E /* ViewController.swift */; };
 		3769C1231B2C235E0098649E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769C1211B2C235E0098649E /* Main.storyboard */; };
@@ -373,6 +374,7 @@
 			files = (
 				3713CE451B2C4841005923DC /* NotificationController.swift in Sources */,
 				3713CE431B2C473A005923DC /* WatchTableCell.swift in Sources */,
+				375A20FF1B2C4A27001402E4 /* Station.swift in Sources */,
 				3713CE441B2C483C005923DC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +652,7 @@
 				3713CE2F1B2C4472005923DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3713CE301B2C4472005923DC /* Build configuration list for PBXNativeTarget "iWatchCityBikes WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +661,7 @@
 				3713CE321B2C4472005923DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3769C1131B2C235E0098649E /* Build configuration list for PBXProject "iWatchCityBikes" */ = {
 			isa = XCConfigurationList;

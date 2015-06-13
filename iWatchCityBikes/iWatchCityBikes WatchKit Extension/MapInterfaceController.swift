@@ -16,6 +16,7 @@ class MapInterfaceController: WKInterfaceController {
         let station = context as! Station
         let region = MKCoordinateRegion(center: station.location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.map.setRegion(region)
+        self.map.addAnnotation(station.location, withPinColor: WKInterfaceMapPinColor.Green)
 
     }
     

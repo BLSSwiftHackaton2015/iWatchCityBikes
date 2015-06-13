@@ -12,9 +12,11 @@ class MapInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var map: WKInterfaceMap!
     
-    override func willActivate() {
-        let location = CLLocationCoordinate2D(latitude: 40.7000000, longitude: -111.0000000)
-        let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+    override func awakeWithContext(context: AnyObject?) {
+        let station = context as! Station
+        let region = MKCoordinateRegion(center: station.location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.map.setRegion(region)
+
     }
+    
 }

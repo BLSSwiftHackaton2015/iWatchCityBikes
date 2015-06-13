@@ -14,6 +14,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet weak var tableView: WKInterfaceTable!
     
+    var stations:[Station]! = []
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -36,6 +37,9 @@ class InterfaceController: WKInterfaceController {
     func loadItems() {
         
         NetworkManager.getData { stations in
+            
+            self.stations = stations as! [Station]
+            
             // update table view
             self.tableView.setNumberOfRows(stations.count, withRowType: "standard");
             
@@ -46,5 +50,9 @@ class InterfaceController: WKInterfaceController {
                 cell.freeStandCountLabel.setText("W. zamków: " + String(station.availableLocksCount))
             }
         }
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        return self.stations[rowIndex]
     }
 }

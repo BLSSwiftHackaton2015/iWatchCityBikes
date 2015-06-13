@@ -11,10 +11,7 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-    
-    @IBOutlet weak var tableView: WKInterfaceTable!
-    
-    
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -22,19 +19,13 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-
-        self.loadItems()
-        
+        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-    }
-    
-    func loadItems() {
-        self.tableView.setNumberOfRows(3, withRowType: "standard");
     }
 
 }
